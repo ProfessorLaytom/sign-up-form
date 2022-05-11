@@ -3,8 +3,13 @@
     src: url('Sextape.ttf') format("truetype");
   }
 
+* {
+    box-sizing: border-box;
+}
+
 html{
     height: 100%;
+    margin: 0;
 }  
 
 body{
@@ -17,22 +22,23 @@ body{
 .img-container{
     --width-img : 42vw 
     position: relative;
-    height: 100vh;
+    height: 100%;
 }
 
 img {
-    height: 100vh;
     width: 42vw;
+    height: inherit;
     object-fit: cover;
+    margin: 0;
 }
 
 .img-text {
     position: absolute;
     text-align: center;
     width: 42vw;
-    top: 40vh;
+    top: 40%;
     background-color: rgba(0, 0, 0, 0.399);
-    height: min(10vh, 200px);
+    height: min(10%, 200px);
     font-family: 'Sextape';
     font-size: 8vh;
 }
@@ -44,6 +50,7 @@ img {
     background-image: linear-gradient(0deg, rgba(252,106,56,1) 0%, rgba(76,0,255,1) 95%, rgba(89,0,255,1) 100%);
     color: transparent;
     background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .signup-container {
@@ -60,6 +67,7 @@ img {
     padding: 4vh;
     margin-top: 6vh;
     margin-bottom: 2vh ;
+    color: #f176ff;
 }
 
 .form-container {
@@ -86,7 +94,14 @@ label > input {
     border: 3px solid #83EEFF ;
     box-shadow: 0 0 14px #83EEFF;
     background-color: #f9c2ff;
+    font-family: 'Jura';
+    color: rgb(75, 25, 122);
+    font-size: 14px;
+    transition: ease 0.3s;
+}
 
+label>input:hover{
+    box-shadow: 0 0 14px #bef6ff
 }
 
 
@@ -101,12 +116,34 @@ label>input:focus{
     width: 18vw;
     border-radius: 5px;
     border: 3px solid #1FFF0F  ;
-    box-shadow: 0 0 14px #1FFF0F;
+    box-shadow: 0 0 18px #1FFF0F;
     background-color: #f9c2ff;
+}
+
+label > em{
+    font-size: 8px;
 }
 
 button {
     margin: 3vh 4vw;
     padding: 1vh 1vw;
     border-radius: 10px;
+    background-color: transparent;
+    border: 3px solid #f176ff;
+    color : #f176ff;
+    font-family: 'Jura';
+    font-weight: 800;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+button:hover{
+    box-shadow:0 0 20px #f176ff;
+}
+
+button:active {
+    border: 3px solid #1FFF0F;
+    color : #1FFF0F;
+    box-shadow:0 0 20px #1FFF0F;
+    transition: 0.2s;
 }
