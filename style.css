@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Sextape";
+    src: url('Sextape.ttf') format("truetype");
+  }
+  
+
+body{
+    margin: 0;
+}
+
+
+.img-container{
+    --width-img : 42vw 
+    position: relative;
+    height: 100vh;
+}
+
+img {
+    height: 100vh;
+    width: 42vw;
+    object-fit: cover;
+}
+
+.img-text {
+    position: absolute;
+    text-align: center;
+    width: 42vw;
+    top: 40vh;
+    background-color: rgba(0, 0, 0, 0.399);
+    height: min(10vh, 200px);
+    font-family: 'Sextape';
+    font-size: 8vh;
+}
+
+.img-text > p {
+    margin: 0;
+    width: 100%;
+    height:100%;
+    background-image: linear-gradient(0deg, rgba(252,106,56,1) 0%, rgba(76,0,255,1) 95%, rgba(89,0,255,1) 100%);
+    color: transparent;
+    background-clip: text;
+}
