@@ -2,10 +2,12 @@
     font-family: "Sextape";
     src: url('Sextape.ttf') format("truetype");
   }
+
   
 
 body{
     margin: 0;
+    display: flex;
 }
 
 
@@ -39,4 +41,32 @@ img {
     background-image: linear-gradient(0deg, rgba(252,106,56,1) 0%, rgba(76,0,255,1) 95%, rgba(89,0,255,1) 100%);
     color: transparent;
     background-clip: text;
+}
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3vw;
+    background-color: rgb(62, 0, 68);
+    color: #83EEFF ;
+    font-family: 'Jura';
+    font-weight: 600;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+label > input {
+    margin-top: 3px;
+    width: 20vw;
 }
